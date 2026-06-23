@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="profile-name">Jane Doe</div>
+        <nav>
+            <a href="#home" class="home-icon">🏠 Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project Details</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.png" alt="Jane Doe Profile Image" class="profile-img">
+        <h3>Jane Doe - Web Developer</h3>
+        <p>I am a passionate front-end web developer specializing in creating structured, responsive layouts and writing clean, maintainable code.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><img src="css-logo.png" alt="CSS"> <span>CSS3</span></div>
+            <div class="skill-card"><img src="git-logo.png" alt="Git"> <span>Git</span></div>
+            <div class="skill-card"><img src="react-logo.png" alt="React"> <span>React</span></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Project Details</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Project 1: E-Commerce Platform</h3>
+                <p>Designed and built a fully functional online retail storefront featuring dynamic state filtering maps.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: Task Management Tool</h3>
+                <p>Developed a drag-and-drop productivity dashboard utilizing local application state configurations.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3: Interactive Portfolio</h3>
+                <p>Created this completely modern responsive web portfolio deployment demonstrating asset clean-ups.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list">
+            <div class="recommendation">"Jane is an exceptionally talented developer who tackles layout challenges gracefully." - Alex P.</div>
+            <div class="recommendation">"Highly reliable team member with excellent command over clean repository structures." - Marcus K.</div>
+            <div class="recommendation">"Her attention to design semantics makes every web app experience seamless." - Sarah T.</div>
+        </div>
+        
+        <form id="recommendation-form">
+            <textarea id="rec-text" placeholder="Leave a recommendation..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div id="popup-modal" class="hidden">
+        <div class="popup-content">
+            <h3>Thank You!</h3>
+            <p>Your recommendation has been submitted successfully.</p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
